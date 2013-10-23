@@ -22,6 +22,98 @@ class WpTerms
     private $termId;
 
     /**
+     * Set Name
+     *
+     * @param string $name
+     *
+     * @return WpTerms
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * Get Name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set Slug
+     *
+     * @param string $slug
+     *
+     * @return WpTerms
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+        return $this;
+    }
+
+    /**
+     * Get Slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * Set TermGroup
+     *
+     * @param int $termGroup
+     *
+     * @return WpTerms
+     */
+    public function setTermGroup($termGroup)
+    {
+        $this->termGroup = $termGroup;
+        return $this;
+    }
+
+    /**
+     * Get TermGroup
+     *
+     * @return int
+     */
+    public function getTermGroup()
+    {
+        return $this->termGroup;
+    }
+
+    /**
+     * Set TermId
+     *
+     * @param int $termId
+     *
+     * @return WpTerms
+     */
+    public function setTermId($termId)
+    {
+        $this->termId = $termId;
+        return $this;
+    }
+
+    /**
+     * Get TermId
+     *
+     * @return int
+     */
+    public function getTermId()
+    {
+        return $this->termId;
+    }
+
+    /**
      * @var string
      *
      * @Column(name="name", type="string", length=200, nullable=false)
